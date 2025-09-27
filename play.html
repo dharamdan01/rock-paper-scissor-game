@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game</title>
+    <link rel="stylesheet" href="play.css">
+    <script src="play.js" defer></script>
+</head>
+<body>
+    <audio id="click-sound" src="./click.mp3"></audio>
+    <audio id="winner-audio" src=""></audio>
+    <main>
+    <div class="heading-div">
+        <p>Note: If you get 10 points then you win!</p>
+    </div>
+
+    <div class="winner-image" id="winner-image">
+        <img src="" alt="" id="result-img">
+    </div>
+
+    <div class="container" id="container">
+    <div class="img-container">
+        <div class="img" onclick="Rock()">
+            <img src="./Images/Rock.jpg" alt="">
+        </div>
+        <div class="img" onclick="Paper()">
+            <img src="./Images/Paper.png" alt="">
+        </div>
+        <div class="img" onclick="Scissor()">
+            <img src="./Images/Scissor.jpg" alt="">
+        </div>
+    </div>
+    <div class="score-container">
+        <div class="your-score-div">
+            <p>Your Score: <span id="user-score">0</span></p>
+        </div>
+        <div class="computer-score-div">
+            <p>Computer Score: <span id="computer-score">0</span></p>
+        </div>
+    </div>
+    <div class="result-message">
+        <div class="message">
+            <p>Result: <span id="message"></span></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
