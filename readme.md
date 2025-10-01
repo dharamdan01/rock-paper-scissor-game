@@ -27,7 +27,9 @@ It’s designed with a clean UI, smooth gameplay, and responsive layout for both
 ---
 
 ## 📸 Demo & Preview
-👉 **Live Demo**: [Play Here](#)  
+
+👉 **Live Demo**: [Play Here](https://rock-paper-scissors-game-javascript.netlify.app/)  
+
 👉 **Preview Screenshot**:  
 
 ![Preview](./assests/project-demo.png)
