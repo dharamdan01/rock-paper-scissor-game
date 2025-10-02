@@ -1,57 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:cursive;
-}
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-.welcome
-{
-    display: flex;
-    justify-content: center;
-    /* height: 100vh; */
-    width: 100%;
-    background-color: brown;
-    padding-bottom: 1px;
-}
-img{
-    height: 20%;
-    width: 45%;
-}
-.container
-{
-    background-color:rgba(223, 111, 37, 0.877);
-}
-.container:hover{
-    background-color: rgb(191, 221, 120);
-    transition: 1s;
-}
-h1{
-    text-align: center;
-    color: #2b2729;
-    text-transform: uppercase;
-}
-.button-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background: rgba(209, 245, 7, 0.247); */
-    background-color: brown;
-    height: 150px;
-    width: 100%;
-    padding-top: 50px;
-}
-.button-div button{
-    height: 60px;
-    width: 120px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 20px;
-    background-color:rgb(255, 192, 255);
-    color: black;
-}
+    main {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #5886b3, #c2b879);
+      text-align: center;
+    }
+    
+    .welcome img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+    }
 
-.button-div button:hover{
-    color: antiquewhite;
-    background: #222;
-    transition: 0.6s;
-}
+    .container h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .button-div button {
+      background: #4b9cc4;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button-div button:hover {
+      background: #2f2f30;
+    }
+
+    @media (max-width: 768px) {
+      .container h1 {
+        font-size: 1.5rem;
+      }
+
+      .button-div button {
+        width: 100%;
+        max-width: 250px;
+        padding: 14px;
+      }
+    }
+
+@media (max-width: 480px) {
+      .container h1 {
+        font-size: 1.2rem;
+      }
+
+      .button-div button {
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+    }
